@@ -1,0 +1,13 @@
+train: ..split_dataset/train/images
+val: ..split_dataset/valid/images
+test: ..split_dataset/test/images
+
+nc: 5
+names: ["helmet", "no-helmet", "no-vest", "person", "vest"]
+
+roboflow:
+  workspace: arbi-epoty
+  project: construction-safety-gsnvb-aewwk
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/arbi-epoty/construction-safety-gsnvb-aewwk/dataset/1
