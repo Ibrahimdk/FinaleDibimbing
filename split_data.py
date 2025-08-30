@@ -67,7 +67,7 @@ def split_dataset_full():
     copy_files(val_files, "valid") 
     copy_files(test_files, "test")
     
-    print("\nProses selesai! Dataset telah berhasill")
+    print("\nProses selesai! Dataset telah berhasilzzl")
 
 if __name__ == "__main__":
     split_dataset_full()
