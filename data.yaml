@@ -1,6 +1,9 @@
-train: ..split_dataset/train/images
-val: ..split_dataset/valid/images
-test: ..split_dataset/test/images
+path: ./preprocessed_data
+
+# Path relatif dari 'path' di atas
+train: train/images
+val: valid/images
+test: test/images
 
 nc: 5
 names: ["helmet", "no-helmet", "no-vest", "person", "vest"]
