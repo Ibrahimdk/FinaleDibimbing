@@ -53,11 +53,8 @@ def create_processed_dataset():
                     img = ImageOps.autocontrast(img)   # Auto-Contrast -  Prerocessed 2
                     
                     # Resize dengan padding (letterboxing) -  Prerocessed 3
-                    img.thumbnail(TARGET_SIZE, Image.Resampling.LANCZOS)
-                    new_img = Image.new("RGB", TARGET_SIZE, (114, 114, 114))
-                    paste_position = ((TARGET_SIZE[0] - img.width) // 2, (TARGET_SIZE[1] - img.height) // 2)
-                    new_img.paste(img, paste_position)
-                    new_img.save(output_path)
+                    stretched_img = img.resize(TARGET_SIZE, Image.Resampling.LANCZOS)
+                    stretched_img.save(output_path)
 
         except FileNotFoundError:
             print(f"  Warning: Folder gambar '{source_img_dir}' tidak ditemukan. Melewati...")
