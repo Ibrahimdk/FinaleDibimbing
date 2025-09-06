@@ -2,7 +2,7 @@ import os
 from collections import defaultdict
 
 # --- UBAH DUA BARIS DI BAWAH INI ---
-LABEL_DIR = "split_dataset/train/labels" 
+LABEL_DIR = "./all_labels" 
 CLASS_NAMES = ['helmet', 'no-helmet', 'no-vest', 'person', 'vest']
 # -----------------------------------
 
