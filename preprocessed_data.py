@@ -52,7 +52,7 @@ def create_processed_dataset():
                     img = ImageOps.exif_transpose(img) # Auto-Orient - Prerocessed 1
                     img = ImageOps.autocontrast(img)   # Auto-Contrast -  Prerocessed 2
                     
-                    # Resize dengan padding (letterboxing) -  Prerocessed 3
+                    # Resize dengan stretch -  Prerocessed 3
                     stretched_img = img.resize(TARGET_SIZE, Image.Resampling.LANCZOS)
                     stretched_img.save(output_path)
 
