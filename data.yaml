@@ -5,8 +5,14 @@ train: train/images
 val: valid/images
 test: test/images
 
-nc: 5
-names: ["helmet", "no-helmet", "no-vest", "person", "vest"]
+# nc: 5
+# names: ["helmet", "no-helmet", "no-vest", "person", "vest"]
+
+# Jumlah kelas (sekarang hanya 3)
+nc: 3
+
+# Nama kelas sesuai urutan ID yang baru
+names: ['helmet', 'person', 'vest']
 
 roboflow:
   workspace: arbi-epoty
