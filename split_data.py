@@ -7,7 +7,7 @@ IMAGE_SOURCE_DIR = "./all_images"
 LABEL_SOURCE_DIR = "./all_labels"
 TARGET_DIR = "split_dataset"
 TRAIN_RATIO = 0.8  # 80% untuk training
-VAL_RATIO = 0.15   # 15% untuk validation
+VAL_RATIO = 0.10   # 10% untuk validation
 # Sisanya (5%) akan menjadi test set
 # ------------------
 
