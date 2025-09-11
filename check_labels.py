@@ -3,7 +3,7 @@ from collections import defaultdict
 
 # --- UBAH DUA BARIS DI BAWAH INI ---
 LABEL_DIR = "./all_labels" 
-CLASS_NAMES = ['helmet', 'no-helmet', 'no-vest', 'person', 'vest']
+CLASS_NAMES = ['helmet', 'person', 'vest']
 # -----------------------------------
 
 def quick_check():
