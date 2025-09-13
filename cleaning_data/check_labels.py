@@ -6,8 +6,8 @@ from collections import defaultdict
 # CLASS_NAMES = ['helmet', 'person', 'vest']
 # -----------------------------------
 
-LABEL_DIR = "label_vest" 
-CLASS_NAMES = ['vest']
+LABEL_DIR = "all_labels" 
+CLASS_NAMES = ['helmet', 'person', 'vest']
 
 def quick_check():
     """Hanya menghitung dan menampilkan jumlah objek per kelas di terminal."""
