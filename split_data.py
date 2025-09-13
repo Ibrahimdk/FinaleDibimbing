@@ -8,7 +8,7 @@ LABEL_SOURCE_DIR = "all_labels"
 TARGET_DIR = "split_dataset"
 TRAIN_RATIO = 0.8  # 80% untuk training
 VAL_RATIO = 0.10   # 10% untuk validation
-# Sisanya (5%) akan menjadi test set
+# Sisanya (10%) akan menjadi test set
 # ------------------
 
 def split_dataset_full():
