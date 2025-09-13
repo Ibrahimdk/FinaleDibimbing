@@ -51,7 +51,7 @@ def create_processed_dataset():
                     img = ImageOps.autocontrast(img)  # auto-contrast
                     
                     # --- TAMBAHKAN BARIS INI UNTUK GRAYSCALE ---
-                    img = ImageOps.grayscale(img) # grayscale
+                    # img = ImageOps.grayscale(img) # grayscale
                     # -------------------------------------------
                     
                     # Resize dengan stretch
