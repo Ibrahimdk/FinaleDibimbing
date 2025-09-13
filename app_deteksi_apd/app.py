@@ -6,11 +6,11 @@ import torch
 device = 0 if torch.cuda.is_available() else "cpu"
 print(f"Menggunakan device: {device}")
 
-# Muat model custom 'best9.pt' Anda
+# Muat model custom 'best.pt' Anda
 try:
-    model = YOLO("best9.pt")
+    model = YOLO("best.pt")
     model.to(device)
-    print("Model 'best9.pt' berhasil dimuat.")
+    print("Model 'best.pt' berhasil dimuat.")
 except Exception as e:
     print(f"Error memuat model: {e}")
     # Fallback ke model standar jika 'best.pt' tidak ditemukan
