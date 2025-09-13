@@ -47,15 +47,15 @@ def create_processed_dataset():
 
                 with Image.open(source_path) as img:
                     # Terapkan Preprocessing
-                    img = ImageOps.exif_transpose(img)
-                    img = ImageOps.autocontrast(img)
+                    img = ImageOps.exif_transpose(img) # auto-orient
+                    img = ImageOps.autocontrast(img)  # auto-contrast
                     
                     # --- TAMBAHKAN BARIS INI UNTUK GRAYSCALE ---
-                    img = ImageOps.grayscale(img)
+                    img = ImageOps.grayscale(img) # grayscale
                     # -------------------------------------------
                     
                     # Resize dengan stretch
-                    stretched_img = img.resize(TARGET_SIZE, Image.Resampling.LANCZOS)
+                    stretched_img = img.resize(TARGET_SIZE, Image.Resampling.LANCZOS) # Resizw 640 640
                     stretched_img.save(output_path)
 
         except FileNotFoundError:
