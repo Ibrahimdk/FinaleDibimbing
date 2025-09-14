@@ -11,9 +11,9 @@ print(f"Menggunakan device: {device}")
 
 # Muat model custom 'best.pt' Anda
 try:
-    model = YOLO("best11.pt")
+    model = YOLO("bestv10mnograys.pt")
     model.to(device)
-    print("Model 'best11.pt' berhasil dimuat.")
+    print("Model berhasil dimuat.")
 except Exception as e:
     print(f"Error memuat model: {e}")
     # Fallback ke model standar jika 'best.pt' tidak ditemukan
