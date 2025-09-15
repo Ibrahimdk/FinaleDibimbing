@@ -7,7 +7,7 @@ import os
 # --- Pengaturan Awal ---
 # Cek ketersediaan GPU, jika tidak ada gunakan CPU
 device = 0 if torch.cuda.is_available() else "cpu"
-print(f"Menggunakan device: {device}")
+print(f"Menggunakan device : {device} .")
 
 # Muat model custom 'best.pt' Anda
 try:
