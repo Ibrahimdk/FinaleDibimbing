@@ -12,7 +12,7 @@ test: test/images
 nc: 3
 
 # Nama kelas sesuai urutan ID yang baru
-names: ['helmet', 'person', 'vest']
+names: ["helmet", "person", "vest"]
 
 roboflow:
   workspace: arbi-epoty

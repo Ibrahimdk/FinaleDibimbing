@@ -11,7 +11,8 @@ print(f"Menggunakan device : {device} .")
 
 # Muat model custom 'best.pt' Anda
 try:
-    model = YOLO("bestv10mnograys.pt")
+    # model = YOLO("best11s-nongray.pt")
+    model = YOLO("best11s-nongray.pt")
     model.to(device)
     print("Model berhasil dimuat.")
 except Exception as e:
